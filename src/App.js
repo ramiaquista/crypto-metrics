@@ -14,7 +14,7 @@ const App = () => (
         <Navbar bg="light" variant="light">
           <Container>
             <Navbar.Brand href="/">
-              Covid Tracker 2021
+              Crypto Currencies
             </Navbar.Brand>
           </Container>
         </Navbar>

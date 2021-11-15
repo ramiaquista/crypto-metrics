@@ -1,23 +1,23 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Container, ListGroup } from 'react-bootstrap';
-import { fetchCountries } from './redux/countries/countries';
+import { fetchCoins } from './redux/coins/coins';
 
 const HomePage = () => {
-  const countries = useSelector((state) => state.countriesReducer);
+  const coins = useSelector((state) => state.coinsReducer);
   const dispatch = useDispatch();
   useEffect(() => {
-    if (countries.length === 0) {
-      dispatch(fetchCountries());
+    if (coins.length === 0) {
+      dispatch(fetchCoins());
     }
   }, []);
-  // console.log(countries);
   return (
     <Container>
       <ListGroup>
-        {countries.map((country) => (
-          <ListGroup.Item key={country.id}>
-            <h3>{country.name}</h3>
+        {coins.map((coin) => (
+          <ListGroup.Item key={coin.id}>
+            <h3>{coin.name}</h3>
+            <p>{coin.priceUsd}</p>
           </ListGroup.Item>
         ))}
       </ListGroup>

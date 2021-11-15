@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Covid Metrics WebApp
+# Cryptocurrency Metrics WebApp
 
 > In this project, I have build a mobile web application to check a list of metrics (numeric values) that I have created making use of React and Redux.
 
