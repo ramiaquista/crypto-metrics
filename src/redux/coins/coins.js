@@ -12,11 +12,13 @@ export const fetchCoins = () => async (dispatch) => {
     const { name } = data;
     const { symbol } = data;
     const priceUsd = data.price_usd;
+    const priceBtc = data.price_btc;
     const updatedData = {
       id,
       name,
       symbol,
       priceUsd,
+      priceBtc,
     };
     return updatedData;
   });

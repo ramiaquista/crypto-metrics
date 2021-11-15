@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Container, ListGroup } from 'react-bootstrap';
+import { Container, ListGroup, Form } from 'react-bootstrap';
 import { fetchCoins } from './redux/coins/coins';
+import Coin from './Coin';
 
 const HomePage = () => {
   const coins = useSelector((state) => state.coinsReducer);
@@ -11,14 +12,29 @@ const HomePage = () => {
       dispatch(fetchCoins());
     }
   }, []);
+  const [coinInput, setInput] = useState('');
+  const list = coins
+    .filter((coin) => coinInput === '' || coin.name.includes(coinInput));
   return (
     <Container>
+      <Form.Control
+        value={coinInput}
+        onInput={(e) => setInput(e.target.value)}
+        type="text"
+        required
+        placeholder="Search Crypto Name"
+        id="name-input"
+      />
       <ListGroup>
-        {coins.map((coin) => (
-          <ListGroup.Item key={coin.id}>
-            <h3>{coin.name}</h3>
-            <p>{coin.priceUsd}</p>
-          </ListGroup.Item>
+        {list.map((coin) => (
+          <Coin
+            key={coin.id}
+            id={coin.id}
+            name={coin.name}
+            symbol={coin.symbol}
+            priceUsd={coin.priceUsd}
+            priceBtc={coin.priceBtc}
+          />
         ))}
       </ListGroup>
     </Container>
