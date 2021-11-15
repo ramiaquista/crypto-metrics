@@ -2,34 +2,52 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Container, ListGroup, Form } from 'react-bootstrap';
 import { fetchCoins } from './redux/coins/coins';
+import { fetchGloblalData } from './redux/global/global';
 import Coin from './Coin';
+import GlobalCryptoData from './GlobalData';
 
 const HomePage = () => {
-  const coins = useSelector((state) => state.coinsReducer);
+  const storeData = useSelector((state) => state);
   const dispatch = useDispatch();
   useEffect(() => {
-    if (coins.length === 0) {
+    if (
+      storeData.coinsReducer.length === 0 && storeData.globalCryptoReducer.length === 0
+    ) {
       dispatch(fetchCoins());
+      dispatch(fetchGloblalData());
     }
   }, []);
+  const coins = storeData.coinsReducer;
+  const globalData = storeData.globalCryptoReducer;
   const [coinInput, setInput] = useState('');
-  const list = coins
-    .filter((coin) => coinInput === '' || coin.name.includes(coinInput));
+  const listCoins = coins.filter(
+    (coin) => coinInput === '' || coin.name.includes(coinInput),
+  );
   return (
     <Container>
+      {globalData.map((data) => (
+        <GlobalCryptoData
+          key={data.coinsCount}
+          coinsCount={data.coinsCount}
+          activeMarkets={data.activeMarkets}
+          totalMcap={data.totalMcap}
+          totalVolume={data.totalVolume}
+          volumeChange={data.volumeChange}
+        />
+      ))}
       <Form.Control
         value={coinInput}
         onInput={(e) => setInput(e.target.value)}
         type="text"
         required
-        placeholder="Search Crypto Name"
+        placeholder="Search by Crypto name"
         id="name-input"
       />
       <div id="home-tag">
         <p>MOST POPULAR COINS</p>
       </div>
       <ListGroup>
-        {list.map((coin) => (
+        {listCoins.map((coin) => (
           <Coin
             key={coin.id}
             id={coin.id}

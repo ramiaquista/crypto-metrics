@@ -1,0 +1,46 @@
+.full-details-container {
+  flex-direction: column;
+}
+
+.title-container {
+  padding: 5vw !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+  height: 25vh;
+  padding-bottom: 4vh;
+}
+
+.title-container > h2 {
+  font-size: 2rem;
+}
+
+#detail-tag {
+  background-color: #304d79;
+}
+
+#detail-tag > h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fdfffe;
+  margin: 0;
+  padding: 1vh;
+}
+
+.data-container {
+  flex-direction: column !important;
+}
+
+.row > h3 {
+  padding: 1vh;
+}
+
+.row:nth-child(odd) {
+  background-color: #4d78c7;
+}
+
+.row:nth-child(even) {
+  background-color: #4164a6;
+}

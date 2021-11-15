@@ -7,7 +7,8 @@ body {
 }
 
 .navbar {
-  background-color: transparent !important;
+  background-color: #4369b2 !important;
+  justify-content: space-between;
 }
 
 .navbar-brand {
@@ -19,14 +20,14 @@ body {
   flex-wrap: wrap;
 }
 
-.container {
-  margin-top: 0;
-  padding: 0;
-}
-
 .btn-primary {
   background-color: transparent !important;
   border: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0;
 }
 
 #home-tag {

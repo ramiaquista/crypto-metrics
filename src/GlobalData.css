@@ -1,0 +1,12 @@
+.global-data-container {
+  padding: 2vh;
+}
+
+.d1 > h2 {
+  text-align: center;
+  color: white;
+}
+
+.d2 {
+  color: white;
+}

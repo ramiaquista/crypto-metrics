@@ -19,6 +19,9 @@ const Coin = (props) => {
     });
   };
 
+  const options2 = { style: 'currency', currency: 'USD' };
+  const toDollars = new Intl.NumberFormat('en-US', options2);
+
   return (
     <ListGroup.Item key={id} onClick={goToDetails}>
       <div className="d-flex" id="data-container">
@@ -27,6 +30,9 @@ const Coin = (props) => {
           {' ( '}
           {symbol}
           {' ) '}
+        </p>
+        <p>
+          { toDollars.format(priceUsd) }
         </p>
       </div>
     </ListGroup.Item>
