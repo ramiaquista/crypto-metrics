@@ -25,6 +25,9 @@ const HomePage = () => {
         placeholder="Search Crypto Name"
         id="name-input"
       />
+      <div id="home-tag">
+        <p>MOST POPULAR COINS</p>
+      </div>
       <ListGroup>
         {list.map((coin) => (
           <Coin

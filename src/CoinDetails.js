@@ -5,7 +5,6 @@ import {
 
 const CoinDetails = () => {
   const { state } = useLocation();
-  console.log(state);
   return (
     <div className="full-details">
       <h3>{ state.name }</h3>

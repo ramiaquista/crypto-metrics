@@ -11,7 +11,7 @@ const Coin = (props) => {
 
   const navigate = useNavigate();
 
-  const clicked = () => {
+  const goToDetails = () => {
     navigate('details', {
       state: {
         id, name, symbol, priceUsd, priceBtc,
@@ -20,22 +20,13 @@ const Coin = (props) => {
   };
 
   return (
-    <ListGroup.Item key={id} onClick={clicked}>
+    <ListGroup.Item key={id} onClick={goToDetails}>
       <div className="d-flex" id="data-container">
         <h3>{name}</h3>
         <p>
           {' ( '}
           {symbol}
           {' ) '}
-        </p>
-      </div>
-      <div>
-        <p>
-          Price:
-          {' '}
-          {priceUsd}
-          {' '}
-          USD
         </p>
       </div>
     </ListGroup.Item>

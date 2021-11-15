@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #5889e6;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-brand {
+  color: #fdfffe !important;
+}
+
+.list-group {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container {
+  margin-top: 0;
+  padding: 0;
+}
+
+.btn-primary {
+  background-color: transparent !important;
+  border: 0;
+}
+
+#home-tag {
+  background-color: #304d79;
+}
+
+#home-tag > p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fdfffe;
+  margin: 0;
+  padding: 1vh;
+}
