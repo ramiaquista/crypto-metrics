@@ -9,6 +9,8 @@
 
 It is a Single Page App (SPA)
 
+Informative Video: [Watch here!](https://www.loom.com/share/011938efc6204dc88463e5d69fe0c4fe)
+
 
 ## Built With
 
