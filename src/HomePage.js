@@ -10,12 +10,8 @@ const HomePage = () => {
   const storeData = useSelector((state) => state);
   const dispatch = useDispatch();
   useEffect(() => {
-    if (
-      storeData.coinsReducer.length === 0 && storeData.globalCryptoReducer.length === 0
-    ) {
-      dispatch(fetchCoins());
-      dispatch(fetchGloblalData());
-    }
+    dispatch(fetchCoins());
+    dispatch(fetchGloblalData());
   }, []);
   const coins = storeData.coinsReducer;
   const globalData = storeData.globalCryptoReducer;

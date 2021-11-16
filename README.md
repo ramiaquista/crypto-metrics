@@ -72,6 +72,10 @@ You are ready to go!
 - GitHub: [@ramiaquista](https://github.com/ramiaquista)
 - Twitter: [@ramiaq1](https://twitter.com/ramiaq1)
 - LinkedIn: [RamiroAquistapace](https://www.linkedin.com/in/ramiro-aquistapace-32b61b204/)
+
+👤  **Credits: Nelson Sakwa**
+
+- License: [Nelson Sakwa](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
