@@ -58,11 +58,9 @@ Once you clone the repository:
 
 You are ready to go!
 
-<!-- ### Live Demo Server
+### Live Demo Server
 
-- Try it here!: [Math Magicians Website Netlify](https://nostalgic-nightingale-0e49bd.netlify.app/)
-
-- Try it here!: [Math Magicians Website Heroku](https://math-magicians-conf1g.herokuapp.com/) -->
+- Try it here!: [Crypto Metrics Website Netlify](https://crypto-metrics.netlify.app/)
 
 
 ## Authors
