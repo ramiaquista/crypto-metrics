@@ -20,12 +20,18 @@
 }
 
 #data-container {
-  align-content: baseline;
+  justify-content: flex-end;
   flex-direction: column;
   padding: 1vh;
-  padding-top: 5vh;
+  padding-top: 2vh;
 }
 
-#data-container > h3 {
-  margin-right: 2vw;
+.eth-icon {
+  height: 10vh;
+  width: 10vh;
+  margin-bottom: 2vh;
+}
+
+.bottom-data > i {
+  margin-left: 15vw;
 }

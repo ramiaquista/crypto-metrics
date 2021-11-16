@@ -3,6 +3,7 @@ import {
   useLocation,
 } from 'react-router-dom';
 import { ListGroup } from 'react-bootstrap';
+import crypto from './crypto.png';
 import './CoinDetails.css';
 
 const CoinDetails = () => {
@@ -12,12 +13,15 @@ const CoinDetails = () => {
   return (
     <div className="full-details-container d-flex">
       <div className="title-container">
-        <h2>{ state.name }</h2>
-        <h3>
-          {' ( '}
-          { state.symbol }
-          {' ) '}
-        </h3>
+        <img src={crypto} alt="eth" id="eth-logo" />
+        <div className="alias">
+          <h2>{ state.name }</h2>
+          <h3>
+            {' ( '}
+            { state.symbol }
+            {' ) '}
+          </h3>
+        </div>
       </div>
       <div id="detail-tag">
         <h4>
@@ -49,6 +53,24 @@ const CoinDetails = () => {
             {'BTC Price: ( '}
             { state.priceBtc }
             {' ) BTC'}
+          </h3>
+        </ListGroup.Item>
+        <ListGroup.Item className="row">
+          <h3>
+            {'Marketcap: '}
+            { toDollars.format(state.mC) }
+          </h3>
+        </ListGroup.Item>
+        <ListGroup.Item className="row">
+          <h3>
+            {'Total Supply: '}
+            { state.tSp }
+          </h3>
+        </ListGroup.Item>
+        <ListGroup.Item className="row">
+          <h3>
+            {'Rank: '}
+            { state.rank }
           </h3>
         </ListGroup.Item>
       </ListGroup>

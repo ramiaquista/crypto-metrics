@@ -5,11 +5,11 @@
 .title-container {
   padding: 5vw !important;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
   color: white;
-  height: 25vh;
+  height: auto;
   padding-bottom: 4vh;
 }
 
@@ -43,4 +43,11 @@
 
 .row:nth-child(even) {
   background-color: #4164a6;
+}
+
+#eth-logo {
+  height: 20vh;
+  width: 20vh;
+  margin-right: auto;
+  margin-left: 0.1vh;
 }

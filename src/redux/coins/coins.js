@@ -13,12 +13,18 @@ export const fetchCoins = () => async (dispatch) => {
     const { symbol } = data;
     const priceUsd = data.price_usd;
     const priceBtc = data.price_btc;
+    const marketCap = data.market_cap_usd;
+    const totalSupply = data.tsupply;
+    const { rank } = data;
     const updatedData = {
       id,
       name,
       symbol,
       priceUsd,
       priceBtc,
+      marketCap,
+      totalSupply,
+      rank,
     };
     return updatedData;
   });

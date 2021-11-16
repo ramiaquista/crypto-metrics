@@ -55,6 +55,9 @@ const HomePage = () => {
             symbol={coin.symbol}
             priceUsd={coin.priceUsd}
             priceBtc={coin.priceBtc}
+            mC={coin.marketCap}
+            tSp={coin.totalSupply}
+            rank={coin.rank}
           />
         ))}
       </ListGroup>
