@@ -24,6 +24,7 @@
   flex-direction: column;
   padding: 1vh;
   padding-top: 2vh;
+  font-family: Lato !important;
 }
 
 .eth-icon {
@@ -34,4 +35,14 @@
 
 .bottom-data > i {
   margin-left: 15vw;
+}
+
+#data-container > h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#data-container > p {
+  font-size: 0.88rem;
+  margin-bottom: 0.7vh;
 }

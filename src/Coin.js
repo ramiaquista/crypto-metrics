@@ -30,7 +30,7 @@ const Coin = (props) => {
           <img src={crypto} alt="eth" className="eth-icon" />
           <i className="far fa-arrow-alt-circle-right" />
         </div>
-        <h3>{name}</h3>
+        <h3>{name.toUpperCase()}</h3>
         <p>
           {' ( '}
           {symbol}

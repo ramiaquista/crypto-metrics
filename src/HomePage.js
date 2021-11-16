@@ -21,7 +21,7 @@ const HomePage = () => {
   const globalData = storeData.globalCryptoReducer;
   const [coinInput, setInput] = useState('');
   const listCoins = coins.filter(
-    (coin) => coinInput === '' || coin.name.includes(coinInput),
+    (coin) => coinInput === '' || coin.name.toLowerCase().includes(coinInput),
   );
   return (
     <Container>
@@ -30,8 +30,6 @@ const HomePage = () => {
           key={data.coinsCount}
           coinsCount={data.coinsCount}
           activeMarkets={data.activeMarkets}
-          totalMcap={data.totalMcap}
-          totalVolume={data.totalVolume}
           volumeChange={data.volumeChange}
         />
       ))}

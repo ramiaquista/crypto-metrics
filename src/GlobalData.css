@@ -1,12 +1,30 @@
 .global-data-container {
+  display: flex;
   padding: 2vh;
+  font-family: Lato !important;
 }
 
-.d1 > h2 {
-  text-align: center;
-  color: white;
+.d1 {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .d2 {
   color: white;
+}
+
+.d2 > h2 {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.d2 > p {
+  font-size: 0.87rem;
+}
+
+.blockchain-icon {
+  height: 14vh;
+  width: 14vh;
 }

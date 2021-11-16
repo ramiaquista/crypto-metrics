@@ -1,5 +1,6 @@
 .full-details-container {
   flex-direction: column;
+  font-family: Lato !important;
 }
 
 .title-container {
@@ -34,7 +35,8 @@
 }
 
 .row > h3 {
-  padding: 1vh;
+  padding: 1.2vh;
+  font-size: 1.2rem;
 }
 
 .row:nth-child(odd) {
