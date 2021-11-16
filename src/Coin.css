@@ -24,7 +24,7 @@
   flex-direction: column;
   padding: 1vh;
   padding-top: 2vh;
-  font-family: Lato, sans-serif !important;
+  font-family: Lato, sans-serif;
 }
 
 .eth-icon {

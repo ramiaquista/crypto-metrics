@@ -1,10 +1,10 @@
 .full-details-container {
   flex-direction: column;
-  font-family: Lato, sans-serif !important;
+  font-family: Lato, sans-serif;
 }
 
 .title-container {
-  padding: 5vw !important;
+  padding: 5vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;

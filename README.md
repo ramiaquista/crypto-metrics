@@ -65,7 +65,7 @@ You are ready to go!
 - Try it here!: [Crypto Metrics Website Netlify](https://crypto-metrics.netlify.app/)
 
 
-## Authors
+## Author
 
 👤 **Ramiro Aquistapace**
 
@@ -84,3 +84,9 @@ Contributions, issues, and feature requests are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project! 😄
+
+## Acknowledgments
+
+👤  **Credits: Nelson Sakwa**
+
+- License: [Nelson Sakwa](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
