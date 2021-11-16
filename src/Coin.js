@@ -24,7 +24,7 @@ const Coin = (props) => {
   const toDollars = new Intl.NumberFormat('en-US', options2);
 
   return (
-    <ListGroup.Item key={id} onClick={goToDetails}>
+    <ListGroup.Item key={id} onClick={goToDetails} data-testid="list-group-item">
       <div className="d-flex" id="data-container">
         <div className="bottom-data d-flex">
           <img src={crypto} alt="eth" className="eth-icon" />

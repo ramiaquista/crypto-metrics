@@ -46,7 +46,7 @@ const HomePage = () => {
       <div id="home-tag">
         <p>MOST POPULAR COINS</p>
       </div>
-      <ListGroup>
+      <ListGroup data-testid="list-container">
         {listCoins.map((coin) => (
           <Coin
             key={coin.id}

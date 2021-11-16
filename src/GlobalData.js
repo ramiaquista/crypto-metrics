@@ -11,7 +11,8 @@ const GlobalCryptoData = (props) => {
   const toDollars = new Intl.NumberFormat('en-US', options2);
 
   return (
-    <div className="global-data-container d-flex">
+    <div className="global-data-container d-flex" data-testid="global-crypto-data-container">
+      <div className="d1" />
       <div className="d2">
         <h2>Global Stats: </h2>
         <p>
