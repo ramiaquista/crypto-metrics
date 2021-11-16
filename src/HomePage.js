@@ -17,7 +17,7 @@ const HomePage = () => {
   const globalData = storeData.globalCryptoReducer;
   const [coinInput, setInput] = useState('');
   const listCoins = coins.filter(
-    (coin) => coinInput === '' || coin.name.toLowerCase().includes(coinInput),
+    (coin) => coinInput === '' || coin.name.toLowerCase().includes(coinInput) || coin.name.includes(coinInput),
   );
   return (
     <Container>
