@@ -1,7 +1,7 @@
 .global-data-container {
   display: flex;
   padding: 2vh;
-  font-family: Lato !important;
+  font-family: Lato, sans-serif !important;
 }
 
 .d1 {

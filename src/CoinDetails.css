@@ -1,6 +1,6 @@
 .full-details-container {
   flex-direction: column;
-  font-family: Lato !important;
+  font-family: Lato, sans-serif !important;
 }
 
 .title-container {

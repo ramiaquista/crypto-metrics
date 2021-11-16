@@ -4,13 +4,13 @@ html {
 
 body {
   background-color: #5889e6;
-  font-family: Lato !important;
+  font-family: Lato, sans-serif !important;
 }
 
 .navbar {
   background-color: #4369b2 !important;
   justify-content: space-between;
-  font-family: Lato !important;
+  font-family: Lato, sans-serif !important;
 }
 
 .navbar-brand {
