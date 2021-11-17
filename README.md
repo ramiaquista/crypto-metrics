@@ -14,7 +14,7 @@ Informative Video: [Watch here!](https://www.loom.com/share/011938efc6204dc88463
 
 ## Built With
 
-- React
+- HTML/CSS - React/Redux
 - Git - Github - GitFlow
 
 
@@ -33,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 
 Go to the top of the page, press te green button that says "Code", and copy the link. Then you have to go to your console and type " git clone 'repository-url.com' ".
 
-That's all, you are ready to go!
+- Next step: Go to usage section!
 
 ### Install
 
@@ -41,7 +41,7 @@ No extra dependencies needed to use the code!
 
 ### Test
 
-JavaScript Testing:
+React/Redux Linters:
 ```
 npx eslint .
 ```
@@ -51,12 +51,25 @@ CSS Testing:
 npx stylelint "**/*.{css,scss}"
 ```
 
+JavaScript Testing (JEST):
+```
+npm run test
+```
+
 ### Usage
 
-Once you clone the repository:
- - cd repository-clone
- - npm install
- - npm start
+- Once you clone the repository:
+```
+cd repository-clone
+```
+- Run to install all dependencies: 
+```
+npm install
+```
+- Run to deploy website: 
+```
+npm start
+```
 
 You are ready to go!
 
@@ -72,10 +85,6 @@ You are ready to go!
 - GitHub: [@ramiaquista](https://github.com/ramiaquista)
 - Twitter: [@ramiaq1](https://twitter.com/ramiaq1)
 - LinkedIn: [RamiroAquistapace](https://www.linkedin.com/in/ramiro-aquistapace-32b61b204/)
-
-👤  **Credits: Nelson Sakwa**
-
-- License: [Nelson Sakwa](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

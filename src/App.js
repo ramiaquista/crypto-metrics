@@ -20,7 +20,7 @@ const App = () => (
       <header>
         <Navbar bg="light" variant="light">
           <Nav.Link as={NavLink} to="/">
-            <Button>
+            <Button id="arrow-back">
               <i className="fas fa-arrow-left" />
             </Button>
           </Nav.Link>

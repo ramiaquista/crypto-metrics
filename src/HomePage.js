@@ -7,6 +7,10 @@ import Coin from './Coin';
 import GlobalCryptoData from './GlobalData';
 
 const HomePage = () => {
+  const arrowback = document.querySelector('#arrow-back');
+  if (arrowback !== null) {
+    arrowback.classList.add('d-none');
+  }
   const storeData = useSelector((state) => state);
   const dispatch = useDispatch();
   useEffect(() => {

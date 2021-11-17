@@ -7,6 +7,10 @@ import crypto from './crypto.png';
 import './CoinDetails.css';
 
 const CoinDetails = () => {
+  const arrowback = document.querySelector('#arrow-back');
+  if (arrowback !== null) {
+    arrowback.classList.remove('d-none');
+  }
   const { state } = useLocation();
   const options2 = { style: 'currency', currency: 'USD' };
   const toDollars = new Intl.NumberFormat('en-US', options2);
